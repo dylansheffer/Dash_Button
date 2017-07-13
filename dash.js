@@ -4,12 +4,11 @@ var dash = dash_button(config.dash.MAC_address, null, null, 'all');
 
 dash.on("detected", function (){
     console.log("dash pressed");
-    triggerNotification();
+    toggleStatus();
 });
 
-var triggerNotification = function() {
+var toggleStatus = function() {
   var https = require('https');
-
   console.log('Calling ' + config.target.name);
   console.log('URL: ' + config.target.url);
 
@@ -17,4 +16,5 @@ var triggerNotification = function() {
     .on("error", function(e){
       console.log("Got error: " + e.message);
     });
+
 }
