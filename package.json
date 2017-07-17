@@ -13,6 +13,7 @@
   "author": "Greg Norman",
   "license": "MIT",
   "dependencies": {
-    "node-dash-button": "0.6.1"
+    "node-dash-button": "0.6.1",
+    "promise": "^8.0.1"
   }
 }
